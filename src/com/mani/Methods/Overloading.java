@@ -10,7 +10,7 @@ public class Overloading {
 
 //        demo("Manish","sachin","Verma");
 //        demo(293,3,3,4,32,2);
-        // demo(); //reference to demo is ambiguous
+        // demo(); //reference to demo is ambiguou
 
     }
 
