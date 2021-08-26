@@ -1,34 +1,31 @@
 package com.mani.BinarySearch;
 
-import java.util.Arrays;
-
 public class BinarySearchDesc {
     public static void main(String[] args) {
 
-        int[] arr = {20,12,8,6,3,2,1};
-        int target = 92;
+        int[] arr = {100,80,40,20,10,2,1,-10,-20,-30,-556};
+        int target = -556;
 
-
-        int ind = binarySearchDesc(arr,target);
-        System.out.println(ind);
+       int index =  binarySearchDesc(arr,target);
+        System.out.println(index);
     }
 
-    static int binarySearchDesc(int[] arr,int target){
+    static int binarySearchDesc(int[] arr, int target) {
 
-        int start = 0,end = arr.length - 1;
+        int start = 0,end = arr.length -1;
+        int mid;
 
         while(start <= end){
-            int mid =  start +( end- start)/2;
+            mid = start + (end - start)/2;
 
-            if(arr[mid] == target){
-                return mid;
-            }else if(target > arr[mid]){
+            if(target > arr[mid]){
                 end = mid - 1;
-            }else{
+            }else if(arr[mid] > target){
                 start = mid + 1;
+            }else{
+                return mid;
             }
         }
         return -1;
-
     }
 }
