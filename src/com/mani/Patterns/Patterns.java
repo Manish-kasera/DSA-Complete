@@ -12,7 +12,7 @@ public class Patterns {
 //       pattern5(5); // thoda time laga
 //
 //       pattern28( 5);// important
-//       pattern30(5);
+//         pattern30(5);
 
 //        pattern6(5);
 //        pattern7(5);
@@ -24,19 +24,96 @@ public class Patterns {
 //        pattern11(5);
 
 //        pattern12(5);
-          pattern13(5);
 
+//        pattern21(5);
+//        pattern22(5);
 
-    }
-
-    static  void pattern13(int n){
-
-
-
+//          pattern26(6);
+//            pattern23(3);
+//            pattern25(5);
 
     }
 
-    
+
+    static  void pattern25(int n){
+
+        for (int row = 1; row <=n ; row++) {
+
+            int totalSpaces = n - row;
+            for (int space = 1; space <= totalSpaces ; space++) {
+                System.out.print(" ");
+            }
+
+            if(row == 1 || row == n){
+                System.out.print("* * * * *");
+            }else{
+                System.out.print("*       *");
+            }
+            System.out.println();
+
+        }
+
+    }
+
+    static void pattern23(int n){
+
+        for (int row = 1; row <= n ; row++) {
+
+            for (int col = 1; col <= 3 * n ; col++) {
+                if((row + col) % 4 == 0){
+                    System.out.print("* ");
+                }else if(row == 2 && ((row +col) % 2==0)){
+                    System.out.print("* ");
+                }else{
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+    }
+
+    static  void pattern26(int n){
+
+        for (int row = 1; row <= n ; row++) {
+
+            for (int col = 1; col <= n - row + 1 ; col++) {
+                System.out.print(row+" ");
+            }
+            System.out.println();
+        }
+
+    }
+
+
+    static  void pattern22(int n){
+
+        for (int row = 1; row <= n ; row++) {
+
+            for (int col = 1; col <= row ; col++) {
+                int num = ((row+col) % 2 == 0) ? 1:0;
+                System.out.print(num+" ");
+            }
+            System.out.println();
+        }
+    }
+
+
+
+    static  void pattern21(int n){
+
+        int count = 1;
+        for (int row = 1; row <= n  ; row++) {
+
+            for (int col = 1; col <= row ; col++) {
+                System.out.print(count+"  ");
+                count++;
+            }
+            System.out.println();
+        }
+    }
+
+
+
     static  void pattern12(int n){
 
         for (int row = 1; row <= (2 * n) - 1 ; row++) {

@@ -6,7 +6,7 @@ public class SmallerLetter {
     public static void main(String[] args) {
 
         char[] letters = {'c', 'f', 'j'};
-        char target = 'k';
+        char target = 'a';
         char ans = nextGreatestLetter(letters,target);
         System.out.println(ans);
     }

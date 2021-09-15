@@ -25,7 +25,7 @@ public class PeakIndex {
 
            // I am in decreasing array
            if(arr[mid] > arr[mid + 1]){
-               // thi may be the ans,but look for at left
+               // this  may be the ans,but look for at left
                // this is why end != mid -1
                end = mid ;
            }else{

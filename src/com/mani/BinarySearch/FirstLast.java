@@ -42,7 +42,7 @@ public class FirstLast {
             }else if (arr[mid] > target){
                 end = mid -1;
             }else{
-                // potential answer ans found
+                // potential answer  found
                 ans = mid;
                 if(findStartIndex){
                     end = mid - 1;

@@ -6,7 +6,7 @@ public class CeilBrute {
 
     public static void main(String[] args) {
         int[] arr ={2,3,4,9,14,16,18};
-        int target = 13;
+        int target = 15;
 
         int ans = bruteForce(arr,target);
         System.out.println(ans);

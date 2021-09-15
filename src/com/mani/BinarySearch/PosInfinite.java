@@ -48,5 +48,5 @@ public class PosInfinite {
         }
 
         return -1;
-    }
+     }
 }
