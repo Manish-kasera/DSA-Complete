@@ -32,8 +32,19 @@ public class Patterns {
 //            pattern23(3);
 //            pattern25(5);
 
+        pattern13(5);
+
     }
 
+    static void pattern13(int n){
+
+        for (int row = 1; row <= n; row++) {
+
+
+        }
+
+
+    }
 
     static  void pattern25(int n){
 
@@ -49,7 +60,6 @@ public class Patterns {
             }else{
                 System.out.print("*       *");
             }
-            System.out.println();
 
         }
 
@@ -300,6 +310,8 @@ public class Patterns {
             // when one row is printed , we need to add a newline
             System.out.println();
         }
+
+
     }
 
 
