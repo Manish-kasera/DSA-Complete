@@ -6,6 +6,13 @@ public class Fibonacci {
 
         System.out.println(fibo(5));
 
+        System.out.println(fiboFormula(5));
+    }
+
+    public static int fiboFormula(int n){
+
+         return Math.pow((1 + Math.sqrt(5))/2,n) - Math.pow((1 - Math.sqrt(5))/2,n);
+
     }
 
     static int fibo(int n){
