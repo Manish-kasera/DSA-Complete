@@ -17,7 +17,9 @@ public class SeivePrimeTillN {
     static  void sieve(int n,boolean[] prime){
 
         for (int i = 2; i * i <= n ; i++) {
+
             if(!prime[i]){
+                //all multiples of the prime number are not primes
                 for (int j = i * 2; j <= n ; j=j+i) {
                     prime[j] = true;
                 }
