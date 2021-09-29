@@ -6,15 +6,14 @@ public class SeivePrimeTillN {
     public static void main(String[] args) {
 
         int n = 37;
-
-        // default all boolean variable are false
-        boolean[] prime = new boolean[n+1];
-
-         sieve(n,prime);
+        sieve(n);
     }
 
     // false in array means number is prime
-    static  void sieve(int n,boolean[] prime){
+    static  void sieve(int n){
+
+        // default all boolean variable are false
+        boolean[] prime = new boolean[n+1];
 
         for (int i = 2; i * i <= n ; i++) {
 

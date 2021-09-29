@@ -2,7 +2,7 @@ package com.mani.Maths;
 
 public class RootPrecise {
     public static void main(String[] args) {
-        int n = 4;
+        int n = 18 ;
         int p = 3;
 
      System.out.printf("%.3f", sqrt(n, p));
