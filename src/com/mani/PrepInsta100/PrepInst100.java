@@ -1,5 +1,8 @@
 package com.mani.PrepInsta100;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class PrepInst100 {
 
     public static void main(String[] args) {
@@ -53,8 +56,144 @@ public class PrepInst100 {
 
 //        System.out.println(isFriendly25(3453,5545));
 
+//        System.out.println(hcf26(15,35));
+
+//        System.out.println(lcm27(2,4));
+
+//        System.out.println(gcd28(13,13));
+
+//        System.out.println(binaryToDecimal29(101011));
+
+//        System.out.println(binaryToOctal30(1010));
+
+//        System.out.println(Arrays.toString(decimalToBinary31(26)));
+
+//        System.out.println(decimalToOctal32(147));
+
+//        System.out.println(Arrays.toString(octalToBinary33(216)));
+
+          System.out.println(octalToDecimal34(45));
+    }
+
+    public static int octalToDecimal34(int oct) {
+        int ans = octalToDecimal(oct);
+        return ans;
+    }
+
+    public static int[] octalToBinary33(int octal) {
+        int num = octalToDecimal(octal);
+        int[] ans =decimalToBinary31(num);
+
+       return ans;
+    }
+
+    private static int octalToDecimal(int octal) {
+        int ans = 0;
+        int base = 8;
+        int count = 0;
+        while(octal != 0){
+            int temp = octal % 10;
+            ans += (temp * Math.pow(base,count));
+            octal /=10 ;
+            count++;
+        }
+        return ans;
+    }
+
+    public static int decimalToOctal32(int num) {
+        ArrayList <Integer> list = new ArrayList<>();
+        int oct = 0;
+        int count = 0;
+        int base = 8;
+        while(num != 0){
+            int temp = num % 8;
+            list.add(temp);
+            num = num / 8;
+
+        }
+
+        int ans = 0;
+        for(int i = list.size()-1 ;i >=0;i--){
+            int temp = list.get(i);
+            ans = ans * 10 + temp;
+        }
+        return ans;
+    }
+
+    public static int[] decimalToBinary31(int deci) {
+        ArrayList <Integer> ans = new ArrayList();
+
+        int n = 0;
+        while(deci != 0){
+             ans.add(deci % 2);
+             deci /= 2;
+             n++;
+        }
+        int[] binary = new int[n];
+
+        int j=0;
+        for (int i = ans.size() - 1; i >=0 ; i--) {
+               binary[j] = ans.get(i);
+               j++;
+        }
+        return binary;
+    }
+
+    public static int binaryToOctal30(int bin) {
+
+        ArrayList <Integer> list = new ArrayList<>();
+        int  num = binaryToDecimal29(bin);
+        int oct = 0;
+        int count = 0;
+        int base = 8;
+        while(num != 0){
+            int temp = num % 8;
+            list.add(temp);
+            num = num / 8;
+
+        }
+
+        int ans = 0;
+        for(int i = list.size()-1 ;i >=0;i--){
+            int temp = list.get(i);
+            ans = ans * 10 + temp;
+        }
+       return ans;
+    }
+
+    public static int binaryToDecimal29(int num) {
+
+        int deci = 0;
+        int count = 0;
+        int base = 2;
+        while(num != 0){
+            int temp = num % 10;
+            num = num / 10;
+            deci +=  (temp * Math.pow(base,count));
+            count++;
+        }
+        return deci;
+    }
+
+    public static int gcd28(int a, int b) {
+      if( a == 0 ){
+          return b;
+      }
+        return gcd28(b % a, a);
+    }
 
 
+    public static int lcm27(int a, int b) {
+        return (a * b)/hcf26(a,b);
+    }
+
+    public static int hcf26(int a, int b) {
+
+        if(a == 0){
+            return b;
+        }
+
+        return hcf26(b % a,a);
     }
 
     public static boolean isFriendly25(int num1, int num2) {
