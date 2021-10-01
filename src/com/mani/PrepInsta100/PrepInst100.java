@@ -72,7 +72,162 @@ public class PrepInst100 {
 
 //        System.out.println(Arrays.toString(octalToBinary33(216)));
 
-          System.out.println(octalToDecimal34(45));
+//          System.out.println(octalToDecimal34(45));
+
+//        System.out.println(quadrant35(-1,-4));
+
+//        System.out.println(permutation36(5,2));
+
+//        System.out.println(hand37(10));
+
+//            fractionSum38(1,3,3,9);
+
+//        System.out.println(replace0With139(5003310));
+
+//           expressPrime40(34);
+
+//        System.out.println(possibleDecoding41(123));
+
+//        System.out.println(vowelOfCons42('g'));
+
+//        System.out.println(alphaOrNot43('&'));
+
+//        System.out.println(area44(4));
+
+//        System.out.println(assci45('f'));
+
+//        prime46(1,100);
+
+//        System.out.println(numDig47(2343));
+
+
+    }
+
+    public static int numDig47(int num) {
+     int ans = (int) (Math.log(num)/Math.log(10)) + 1;
+     return ans ;
+    }
+
+    public static void prime46(int start, int end) {
+
+        for (int i = start; i <= end ; i++) {
+            if(isPrime9(i)){
+                System.out.print(i+" ");
+            }
+        }
+    }
+
+    public static int assci45(char a) {
+        return (int) a;
+    }
+
+    public static float area44(float r) {
+
+        float area =(float) Math.PI  * r * r;
+        return  area;
+    }
+
+    public static boolean alphaOrNot43(char c) {
+
+        if(c >= 'a' && c < 'z' || c >= 'A' && c <= 'Z'){
+            return true;
+        }
+        return false;
+    }
+
+    public static String vowelOfCons42(char c) {
+
+        if(c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' || c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U'){
+            return "Vowel";
+        }
+        return "Const";
+
+    }
+
+    public static void expressPrime40(int num) {
+
+        int count = 0;
+        for (int i = 1; i <= num/2 ; i++) {
+
+            if(isPrime9(i)){
+                if(isPrime9(num-i)){
+                    System.out.println(i + " "+ (num-i));
+                    count = 1;
+                }
+            }
+        }
+        if(count == 0){
+            System.out.println("Nahi Mila");
+        }
+    }
+
+    public static int replace0With139(int num) {
+
+        int rev = 0;
+        while (num != 0){
+            int temp = num % 10;
+            if(temp == 0){
+                temp = 1;
+            }
+            rev = rev * 10 + temp;
+            num /= 10;
+        }
+
+        int temp = rev;
+        rev = 0;
+        while (temp != 0){
+            int t = temp%10;
+            rev = rev * 10 + t;
+            temp/=10;
+        }
+        return rev;
+    }
+
+    public static void  fractionSum38(int num1, int deno1, int num2, int deno2) {
+
+        int lcm = (deno1 * deno2)/gcd28(deno1,deno2);
+
+        int n1 = (lcm / deno1) * num1;
+        int n2 = (lcm / deno2) * num2;
+
+        int numerator = n1 + n2;
+        int denominator = lcm;
+
+        int g = gcd28(numerator,denominator);
+        System.out.println(numerator/g+"/"+denominator/g);
+
+    }
+
+    public  static int  hand37(int n){
+       int r = 2;
+
+       int ans = factorial17(n)/(factorial17(r)*factorial17(n-r));
+
+       return ans;
+    }
+
+    public static int permutation36(int n, int r) {
+
+        int ans = factorial17(n)/ factorial17(n-r);
+        return ans;
+
+    }
+
+    public static int quadrant35(int x, int y) {
+
+        if( x== 0 && y == 0){
+            return 0;
+        }
+
+        if(x > 0 && y > 0){
+            return 1;
+        }else if(x > 0 && y < 0){
+            return 2;
+        }else if(x < 0 && y < 0){
+            return 3;
+        }else {
+            return 4;
+        }
     }
 
     public static int octalToDecimal34(int oct) {
