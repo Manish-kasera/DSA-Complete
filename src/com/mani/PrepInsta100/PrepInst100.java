@@ -99,7 +99,7 @@ public class PrepInst100 {
 //        prime46(1,100);
 
 //        System.out.println(numDig47(2343));
-        System.out.println(743);
+
 
 
     }
