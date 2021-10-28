@@ -9,9 +9,10 @@ public class Fibonacci {
 //        for (int i = 0; i < 11 ; i++) {
 //            System.out.println(fiboFormula(i));
 //        }
-        System.out.println(fiboFormula(50));
+        System.out.println(fiboFormula(5));
     }
 
+    // formula based
     public static int fiboFormula(int n){
 
         return (int)(Math.pow(((1 + Math.sqrt(5)) / 2), n) / Math.sqrt(5));

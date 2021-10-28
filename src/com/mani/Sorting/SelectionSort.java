@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class SelectionSort {
     public static void main(String[] args) {
 
-        int[] arr = {4342,52,1244,22223,3};
+        int[] arr = {4342,52,1244,22223,99998};
         System.out.println(Arrays.toString(arr));
 
 //        selectionSort1(arr);

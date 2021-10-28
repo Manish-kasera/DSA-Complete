@@ -6,9 +6,9 @@ public class Nto1 {
         int n = 5;
 //        fun(n);
 
-//        funRev(n);
+        funRev(n);
 
-        funBoth(n);
+//        funBoth(n);
     }
 
     public static void funBoth(int n) {
