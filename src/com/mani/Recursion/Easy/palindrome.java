@@ -1,6 +1,6 @@
-package com.mani.Recursion;
+package com.mani.Recursion.Easy;
 
-import static com.mani.Recursion.Reverse.rev2;
+import static com.mani.Recursion.Easy.Reverse.rev2;
 
 public class palindrome {
     public static void main(String[] args) {

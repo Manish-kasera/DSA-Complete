@@ -1,4 +1,4 @@
-package com.mani.Recursion;
+package com.mani.Recursion.Easy;
 
 public class NumberExampleRecursion {
 

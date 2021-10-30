@@ -1,6 +1,4 @@
-package com.mani.Recursion;
-
-import static com.mani.Recursion.Reverse.helper;
+package com.mani.Recursion.Easy;
 
 public class Count0 {
     public static void main(String[] args) {
