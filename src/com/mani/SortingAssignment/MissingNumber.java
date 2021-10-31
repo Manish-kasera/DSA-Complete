@@ -41,7 +41,7 @@ public class MissingNumber {
         return ans;
     }
 
-    static void swap(int[] nums, int i, int correct) {
+    public static void swap(int[] nums, int i, int correct) {
         int temp = nums[i];
         nums[i] = nums[correct];
         nums[correct] = temp;
