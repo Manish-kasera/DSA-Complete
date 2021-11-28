@@ -1,4 +1,4 @@
-package com.mani;
+package com.mani.Switch_Statement;
 
 import java.util.Scanner;
 

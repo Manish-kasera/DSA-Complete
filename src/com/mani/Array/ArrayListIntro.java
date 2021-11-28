@@ -15,17 +15,17 @@ public class ArrayListIntro {
         al.add(21);
         al.add(2458);
 
-/*
-                System.out.println(al);
-         There is no al[i] it's al.get(i)
-                for (int i = 0; i < al.size(); i++) {
-                    System.out.println(al.get(i));
-                }
-                for (int ele : al)
-                    System.out.println(ele);
- */
 
-        System.out.println(al);
+                System.out.println(al); // pura array print kr dega
+
+         // There is no al[i] it's al.get(i)
+//                for (int i = 0; i < al.size(); i++) {
+//                    System.out.println(al.get(i));
+//                }
+//                for (int ele : al)
+//                    System.out.println(ele);
+
+
         System.out.println(al.size());
 
         al.set(1,33);

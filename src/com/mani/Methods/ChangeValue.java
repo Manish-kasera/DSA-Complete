@@ -1,7 +1,6 @@
 package com.mani.Methods;
 
 import java.util.Arrays;
-import java.util.HashMap;
 
 public class ChangeValue {
     public static void main(String[] args) {
@@ -13,6 +12,7 @@ public class ChangeValue {
         System.out.println(Arrays.toString(arr));
     }
     static  void change(int[] nums){
-        nums[0]=90; // idf you make a change to the object via this ref variable ,same object will be changed
+        nums[0]=90; // if you make a change to the object via this ref variable ,
+        // same object will be changed
     }
 }

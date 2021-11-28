@@ -1,6 +1,5 @@
 package com.mani.Array;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 import static com.mani.Array.Swap.swap;

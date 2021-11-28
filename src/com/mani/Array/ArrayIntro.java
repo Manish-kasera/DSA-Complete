@@ -9,7 +9,7 @@ public class ArrayIntro {
         Scanner in = new Scanner(System.in);
 
         int[] arr =  new int[3];
-        int[] arr1 = {833,6,3,2,3};
+//        int[] arr1 = {833,6,3,2,3};
 
         for (int i = 0; i < arr.length; i++) {
             arr[i] = in.nextInt();

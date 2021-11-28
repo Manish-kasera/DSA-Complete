@@ -3,7 +3,7 @@ package com.mani.First_Java_Program_Assignment;
 public class Armstrong {
 
     public static void main(String[] args) {
-       int num = 371;
+       int num = 371435;
         System.out.println(isArmstrong(num));
     }
 

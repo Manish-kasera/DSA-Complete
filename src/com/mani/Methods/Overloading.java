@@ -8,9 +8,9 @@ public class Overloading {
 //     fun("manish");
 //     fun(10,20);
 
-//        demo("Manish","sachin","Verma");
-//        demo(293,3,3,4,32,2);
-        // demo(); //reference to demo is ambiguou
+        demo("Manish","sachin","Verma");
+        demo(293,3,3,4,32,2);
+       //  demo(); //reference to demo is ambiguous
 
     }
 
