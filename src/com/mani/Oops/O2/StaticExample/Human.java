@@ -5,11 +5,12 @@ public class Human {
     String name;
     int salary;
     boolean married;
+    // static : It doesn't  depend on the Objects.
     static long population;
 
      static void message(){
         System.out.println("Hello World");
-
+       
         // this represents an objects
         // but here is static method that means it doesn't
         // depend on an objects`

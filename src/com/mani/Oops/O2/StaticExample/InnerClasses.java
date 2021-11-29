@@ -1,8 +1,10 @@
 package com.mani.Oops.O2.StaticExample;
 
+
+
 // outside classes can't be static
-public class InnerClasses {
-     static class Test{
+  public class InnerClasses {
+    static class Test{
           String name;
 
           Test(String  name){
@@ -20,4 +22,8 @@ public class InnerClasses {
     }
 
 }
+// outside classes can't be static
+//static class A{
+//
+//}
 

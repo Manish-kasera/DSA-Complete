@@ -19,7 +19,7 @@ public class StaticBlock {
         System.out.println(StaticBlock.a);
         System.out.println(StaticBlock.b);
 
-        StaticBlock.b += 23;
+        StaticBlock.b += 3;
         StaticBlock obj2 = new StaticBlock();
 
         System.out.println(StaticBlock.a);

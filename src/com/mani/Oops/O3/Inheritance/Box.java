@@ -1,9 +1,10 @@
 package com.mani.Oops.O3.Inheritance;
 
-public class Box {
+public cd class Box {
     double l;
     double h;
     double w;
+    // double weight;
 
     Box(){
         this.l = -1;
@@ -19,6 +20,9 @@ public class Box {
     }
 
     Box(double l, double h, double w){
+
+        // super() // Objects class
+
         this.l = l;
         this.h = h;
         this.w = w;
@@ -31,6 +35,7 @@ public class Box {
     }
 
     public void information(){
+
         System.out.println("Running the box");
     }
 }

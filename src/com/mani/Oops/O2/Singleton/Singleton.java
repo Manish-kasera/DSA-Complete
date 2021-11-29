@@ -1,5 +1,7 @@
 package com.mani.Oops.O2.Singleton;
 
+
+// Singleton class can create only one objects
 public class Singleton {
 
     private Singleton(){

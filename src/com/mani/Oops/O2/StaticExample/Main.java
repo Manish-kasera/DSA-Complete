@@ -2,22 +2,28 @@ package com.mani.Oops.O2.StaticExample;
 
 public class Main {
     public static void main(String[] args) {
-/*
+
       Human kunal = new Human(12,"Kunal",100000,false);
       Human rahul = new Human(32,"Rahul",1000,true);
 
 
         System.out.println(kunal.salary);
-        System.out.println(kunal.name);
+        System.out.println(rahul.name);
+
+        System.out.println(kunal.population);
+        System.out.println(rahul.population);
+
         System.out.println(Human.population);
-        System.out.println(Human.population);
-*/
+
+        // inside a static method we can't use anything that is non-static
+        // greeting();  // error
+
 
     }
 
     // this is not dependent on an objects
     static  void fun(){
-       // greeting(); // yu can't use this because
+       // greeting(); // you can't use this because
         // it requires an instance but the function
         // you are using it doesn't depend on instance
 
