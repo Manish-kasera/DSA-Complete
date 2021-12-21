@@ -1,6 +1,8 @@
 package com.mani.Oops.O3.Inheritance;
 
-public class BoxPrice extends BoxWeight{
+
+
+public  class BoxPrice extends BoxWeight{
 
     int boxPrice;
 
@@ -13,6 +15,8 @@ public class BoxPrice extends BoxWeight{
         super(other);
         this.boxPrice = other.boxPrice;
     }
+
+
 
     BoxPrice(double l,double h, double w,double weight,int boxPrice){
         super(l,h,w,weight);

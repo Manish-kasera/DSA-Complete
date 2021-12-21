@@ -1,6 +1,7 @@
 package com.mani.PrepInsta100;
 
-import java.util.ArrayList;
+import
+        java.util.ArrayList;
 import java.util.Arrays;
 
 public class PrepInst100 {
